@@ -1,27 +1,13 @@
-# MindMate
+# MindMate — Product Concept
 
-MindMate is an AI-powered mental health companion web app designed to provide emotional support, journaling prompts, and mindfulness tools. It leverages advanced AI models to offer personalized interactions and insights.
+This repository contains an early product concept for a supportive journaling and mindfulness companion.
 
-## 🌟 Features
+## Proposed direction
 
-- 🤖 **AI Chatbot**: Friendly, empathetic conversations using GPT.
-- 📊 **Mood Tracker**: Users log daily moods with emojis or sliders.
-- 📝 **Journaling Prompts**: AI-generated prompts based on mood.
-- 🧘 **Mindfulness Tools**: Breathing exercises, calming sounds.
-- 📈 **Analytics Dashboard**: Visualize mood trends over time.
+The concept explores mood check-ins, journaling prompts, breathing exercises, and a supportive chat experience.
 
-## 🛠️ Tech Stack
+## Project status
 
-- **Frontend**: React.js
-- **Backend**: Flask or Node.js
-- **AI**: OpenAI API (GPT-4), optional Hugging Face models
-- **Database**: Firebase or MongoDB
-- **Hosting**: Vercel
+This repository currently contains a concept document only. It does not include an implemented application, AI integration, health assessment, or persistent mood-tracking service. The proposed features are not medical care or mental-health advice.
 
-## 🚀 Getting Started
-
-1. **Clone the repository**:
-   ```bash
-   git clone https://github.com/your-username/MindMate.git
-   cd MindMate
-   ```
+The next step for this project would be to choose a small, clearly scoped feature and build it as a working application.
