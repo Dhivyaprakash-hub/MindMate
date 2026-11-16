@@ -8,6 +8,8 @@ No account, API key, paid service, install, or build step is required. Open `ind
 
 ## Privacy
 
+Use sample entries in the public demo. GitHub Pages project sites on the same owner hostname share a browser origin. For private journaling, run MindMate on its own origin and avoid shared browser profiles.
+
 Check-ins and notes are stored in this browser’s local storage and are not sent to an application server. They are not encrypted and may be visible to other people using the same browser profile. Use **Privacy & data** to export or delete them. Clearing browser data also removes saved entries. The app uses no analytics, external AI, trackers, or remote font service.
 
 ## Scope and boundaries
