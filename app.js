@@ -1,3 +1,7 @@
+if (location.hostname === "dhivyaprakash-hub.github.io") {
+  document.getElementById("hosted-demo-notice").hidden = false;
+}
+
 (() => {
   const STORAGE_KEY = 'mindmate-private-space-v1';
   const moods = [
