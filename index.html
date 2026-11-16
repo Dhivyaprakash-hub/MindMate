@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#f2efe8"><meta name="description" content="A gentle, private space for daily reflection, journaling and breathing breaks.">
+  <meta name="theme-color" content="#f2efe8"><meta name="description" content="A browser-local space for daily reflection, journaling and breathing breaks.">
   <title>MindMate — a little space for you</title><link rel="icon" href="mindmate.svg" type="image/svg+xml"><link rel="stylesheet" href="styles.css">
   <script src="app.js" defer></script>
 </head>
@@ -21,6 +21,7 @@
     </aside>
     <main class="main-content" id="main-content" tabindex="-1">
       <header class="topbar"><div><span class="top-date" id="today-date"></span><span class="mobile-brand">mindmate<span class="brand-dot">.</span></span></div><button class="avatar" aria-label="Privacy and data" data-action="privacy">M</button></header>
+      <p id="hosted-demo-notice" class="small-note" hidden>Public demo. Use sample entries only. Other projects on this GitHub Pages hostname share browser storage.</p>
       <section class="page active" id="page-today" aria-labelledby="welcome-title">
         <div class="welcome-row"><div><p class="eyebrow">A MOMENT FOR YOU</p><h1 id="welcome-title">Make a little room<br>for <em>how you feel.</em></h1><p class="subcopy">No pressure to have it figured out. Just start where you are.</p></div><div class="sun-art" aria-hidden="true"><span></span><i></i></div></div>
         <div class="today-grid"><article class="panel checkin-panel"><div class="panel-heading"><div><p class="eyebrow">01 / CHECK IN</p><h2>How are you, really?</h2></div><span class="panel-icon">✳</span></div><p class="muted">Pick what feels closest. There’s no wrong answer.</p><div class="mood-options" id="today-moods" role="group" aria-label="Choose your mood"></div><button class="button button-dark" data-page="reflect">Take a moment <span>↗</span></button><div class="last-checkin" id="last-checkin"></div></article>
@@ -34,7 +35,7 @@
       <div class="toast" id="toast" role="status" aria-live="polite"></div>
     </main>
   </div>
-  <dialog id="privacy-dialog" class="privacy-dialog"><button class="dialog-close" data-action="close-dialog" aria-label="Close">×</button><p class="eyebrow">YOUR DATA, YOUR CHOICE</p><h2>A private space,<br><em>on this device.</em></h2><p>MindMate saves your check-ins and journal notes in this browser’s local storage. Nothing is sent to a server, and there are no accounts or trackers.</p><p>Anyone who uses this browser profile may be able to see saved entries. This app does not encrypt them. Export a copy or clear them below.</p><div class="dialog-actions"><button class="button button-outline" data-action="export">Export my data</button><button class="button button-danger" data-action="clear-data">Delete my data</button></div><button class="text-button" data-action="close-dialog">Back to MindMate</button></dialog>
+  <dialog id="privacy-dialog" class="privacy-dialog" aria-labelledby="privacy-title"><button class="dialog-close" data-action="close-dialog" aria-label="Close">×</button><p class="eyebrow">YOUR DATA, YOUR CHOICE</p><h2 id="privacy-title">A private space,<br><em>on this device.</em></h2><p>MindMate saves your check-ins and journal notes in this browser’s local storage. Nothing is sent to a server, and there are no accounts or trackers.</p><p>Anyone who uses this browser profile may be able to see saved entries. This app does not encrypt them. Export a copy or clear them below.</p><div class="dialog-actions"><button class="button button-outline" data-action="export">Export my data</button><button class="button button-danger" data-action="clear-data">Delete my data</button></div><button class="text-button" data-action="close-dialog">Back to MindMate</button></dialog>
   <nav class="mobile-nav" aria-label="Main navigation"><button class="nav-link active" data-page="today"><span>◷</span>Today</button><button class="nav-link" data-page="reflect"><span>✳</span>Check in</button><button class="nav-link" data-page="breathe"><span>◌</span>Breathe</button><button class="nav-link" data-page="journal"><span>▤</span>Journal</button></nav>
 </body>
 </html>
